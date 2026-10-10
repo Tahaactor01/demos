@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>RIDE TIME Automobiles | Block 9 Gulistan-e-Johar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --char: #23282D;
+    --char2: #2D343A;
+    --orange: #D1600F;
+    --blue: #6D96E0;
+    --yellow: #F7B538;
+    --red: #FF4A4A;
+    --bg: #F1F2F4;
+    --card: #FFFFFF;
+    --ink: #23282D;
+    --muted: #66707B;
+    --line: #DFE2E6;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #14181C; --card: #1D2328; --ink: #EEF0F2; --muted: #9AA4AF; --line: #2C343B; }
+  }
+  :root[data-theme="dark"] { --bg: #14181C; --card: #1D2328; --ink: #EEF0F2; --muted: #9AA4AF; --line: #2C343B; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: calc(70px + env(safe-area-inset-top, 0px)); }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 16px; line-height: 1.55; padding-bottom: 76px; }
+  a { color: inherit; }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 22px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 26px; border: 0; border-radius: 3px; font: 700 14px "Montserrat", sans-serif; letter-spacing: .04em; text-transform: uppercase; text-decoration: none; cursor: pointer; }
+  .btn.orange { background: var(--orange); color: #fff; }
+  .btn.blue { background: var(--blue); color: #fff; }
+  .btn.dark { background: var(--char); color: #fff; }
+  .btn.ghost { background: transparent; color: #fff; box-shadow: inset 0 0 0 2px #fff; }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+  svg.i { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+  /* top info bar */
+  .top { background: var(--char); color: #fff; }
+  .top .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 40px; padding-top: 22px; padding-bottom: 22px; }
+  .logo { font-weight: 800; font-size: clamp(24px, 4vw, 34px); line-height: 1.05; letter-spacing: -.01em; margin-right: auto; max-width: 420px; overflow-wrap: anywhere; }
+  .logo b { color: var(--orange); }
+  .info { display: flex; align-items: center; gap: 12px; font-size: 14px; }
+  .info .ic { color: var(--orange); }
+  .info small { display: block; color: var(--orange); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+  .info strong { font-size: 20px; font-weight: 700; }
+  .info a { text-decoration: none; }
+  .info .addr { max-width: 280px; }
+
+  .nav { background: #F1F2F4; position: sticky; top: 0; z-index: 20; border-bottom: 1px solid #D6D9DD; padding-top: env(safe-area-inset-top, 0px); }
+  .nav .wrap { display: flex; gap: 6px 30px; overflow-x: auto; }
+  .nav a { display: block; padding: 20px 0; color: #23282D; font-weight: 700; font-size: 14px; text-transform: uppercase; text-decoration: none; white-space: nowrap; }
+  .nav a:hover { color: var(--orange); }
+
+  /* hero */
+  .hero { position: relative; color: #fff; overflow: hidden; background: linear-gradient(180deg, #7C8A97 0%, #3A444E 100%); }
+  .hero .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 62%; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,24,28,.82) 0%, rgba(20,24,28,.5) 55%, rgba(20,24,28,.12) 100%); }
+  .hero .wrap { position: relative; z-index: 1; }
+  .hero .wrap { display: flex; align-items: center; min-height: 540px; }
+  .hero .art { align-self: end; margin-left: -40px; }
+  .hero .art svg { width: 100%; height: auto; display: block; }
+  .hero .copy { padding: 56px 0; max-width: 580px; }
+  .hero .eyebrow { margin: 0 0 8px; font-weight: 600; font-size: 15px; opacity: .9; }
+  .hero h1 { margin: 0; font-weight: 800; font-size: clamp(34px, 6vw, 62px); line-height: 1.02; text-transform: uppercase; }
+  .hero h1 span { display: block; color: var(--orange); }
+  .hero p.lead { margin: 18px 0 26px; max-width: 34ch; font-size: 17px; }
+  .hero .btns { display: flex; flex-wrap: wrap; gap: 12px; }
+  .ratingbar { background: var(--orange); color: #fff; }
+  .ratingbar .wrap { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; padding-top: 14px; padding-bottom: 14px; }
+  .ratingbar b { font-size: 26px; font-weight: 800; }
+
+  /* inventory */
+  .inv-head { background: var(--char); color: #fff; padding-top: 44px; }
+  .inv-head h2 { margin: 0; font-size: clamp(26px, 4vw, 38px); font-weight: 800; text-transform: uppercase; }
+  .inv-head h2 span { color: var(--orange); }
+  .tabs { display: flex; gap: 3px; margin-top: 26px; }
+  .tab { min-height: 54px; padding: 0 28px; border: 0; background: var(--char2); color: #cfd4d9; font: 700 14px "Montserrat", sans-serif; text-transform: uppercase; cursor: pointer; }
+  .tab[aria-selected="true"] { background: #fff; color: var(--orange); }
+  .inv { padding: 44px 0 54px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  .car { background: var(--card); }
+  .car[hidden] { display: none; }
+  .car .pic { position: relative; aspect-ratio: 1.6 / 1; background: linear-gradient(180deg, #D9DEE4, #A9B3BE); overflow: hidden; display: grid; place-items: end center; }
+  .car .pic svg { width: 92%; height: auto; margin-bottom: 8px; }
+  .car .pic .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .ribbon { z-index: 2; position: absolute; top: 0; left: 0; width: 100px; height: 100px; overflow: hidden; pointer-events: none; }
+  .ribbon span { position: absolute; top: 20px; left: -30px; width: 130px; padding: 4px 0; background: var(--blue); color: #fff; font-weight: 700; font-size: 12px; text-align: center; transform: rotate(-45deg); }
+  .car .row { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; padding: 18px 0 14px 14px; }
+  .car h3 { margin: 0; font-size: 15px; font-weight: 700; text-transform: uppercase; line-height: 1.3; }
+  .price { flex: none; background: var(--blue); color: #fff; font-weight: 800; font-size: 15px; padding: 10px 14px 10px 24px; clip-path: polygon(14px 0, 100% 0, 100% 100%, 0 100%); white-space: nowrap; }
+  .specs { margin: 0 14px; padding: 12px 0 16px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: 13px; }
+  .more { text-align: center; margin-top: 40px; }
+  .samplenote { text-align: center; color: var(--muted); font-size: 13px; margin: 18px 0 0; }
+
+  /* buy / sell */
+  .bs { background: linear-gradient(rgba(35,40,45,.72), rgba(35,40,45,.72)), linear-gradient(120deg, #4D5964, #2B323A); padding: 70px 0; }
+  .bs .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .box { padding: 32px; color: #23282D; min-height: 190px; }
+  .box.y { background: var(--yellow); }
+  .box.r { background: var(--red); color: #fff; }
+  .box h3 { margin: 0 0 8px; font-size: 26px; font-weight: 700; line-height: 1.2; }
+  .box p { margin: 0 0 20px; max-width: 40ch; }
+
+  /* why */
+  .why { padding: 72px 0; }
+  .why h2, .contact h2 { margin: 0 0 40px; text-align: center; font-size: clamp(26px, 4vw, 38px); font-weight: 800; text-transform: uppercase; }
+  .why h2::after, .contact h2::after { content: ""; display: block; width: 66px; height: 5px; margin: 16px auto 0; background: linear-gradient(90deg, var(--orange) 0 60%, transparent 60% 70%, var(--orange) 70%); }
+  .feat { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+  .feat div { display: grid; grid-template-columns: 52px 1fr; gap: 14px; }
+  .feat svg.i { width: 48px; height: 48px; color: var(--orange); stroke-width: 1.6; }
+  .feat h3 { margin: 0 0 6px; font-size: 15px; font-weight: 800; text-transform: uppercase; }
+  .feat p { margin: 0; color: var(--muted); font-size: 14.5px; }
+
+  /* contact */
+  .contact { background: var(--char); color: #fff; padding: 72px 0; }
+  .contact .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .contact dl { margin: 0; display: grid; grid-template-columns: 90px 1fr; gap: 16px; }
+  .contact dt { color: var(--orange); font-weight: 700; }
+  .contact dd { margin: 0; }
+  .contact dd a { color: #fff; }
+  .contact label { display: block; margin-bottom: 14px; font-weight: 600; font-size: 14px; }
+  .contact input, .contact textarea { width: 100%; margin-top: 6px; padding: 13px 14px; border: 0; border-radius: 3px; font: 500 16px "Montserrat", sans-serif; color: #23282D; background: #fff; }
+  .contact textarea { min-height: 110px; resize: vertical; }
+  footer { background: #1A1E22; color: #9AA4AF; padding: 22px 0; font-size: 13px; }
+
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: flex; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px)); background: var(--char); }
+  .bar .btn { flex: 1; min-height: 46px; }
+
+  @media (max-width: 960px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .hero .wrap { min-height: 460px; }
+    .feat { grid-template-columns: repeat(2, 1fr); }
+    .hero .wrap { grid-template-columns: 1fr; min-height: 0; }
+    .hero .art { margin: 0 -22px; order: 2; }
+    .bs .wrap, .contact .cols { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 560px) {
+    .grid, .feat { grid-template-columns: 1fr; }
+    .info .addr { max-width: none; }
+    .tab { padding: 0 18px; }
+  }
+  @media (min-width: 900px) { .bar { display: none; } body { padding-bottom: 0; } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="sedan" viewBox="0 0 400 150">
+      <ellipse cx="200" cy="141" rx="188" ry="6" fill="#000" opacity=".25"/>
+      <path fill="currentColor" d="M18 114 L26 92 Q34 82 66 78 L118 72 Q148 40 192 36 L252 36 Q288 38 312 68 L356 74 Q384 79 386 100 L386 114 Z"/>
+      <path fill="#FFFFFF" opacity=".6" d="M132 70 Q156 46 192 44 L210 44 L210 70 Z"/>
+      <path fill="#FFFFFF" opacity=".6" d="M220 44 L248 44 Q274 46 292 68 L220 70 Z"/>
+      <rect x="364" y="86" width="20" height="8" rx="3" fill="#FFE9A8"/>
+      <rect x="18" y="88" width="14" height="8" rx="3" fill="#FF4A4A"/>
+      <circle cx="95" cy="116" r="27" fill="#14181C"/><circle cx="95" cy="116" r="14" fill="#C9CFD6"/><circle cx="95" cy="116" r="5" fill="#14181C"/>
+      <circle cx="308" cy="116" r="27" fill="#14181C"/><circle cx="308" cy="116" r="14" fill="#C9CFD6"/><circle cx="308" cy="116" r="5" fill="#14181C"/>
+    </symbol>
+    <symbol id="suv" viewBox="0 0 400 150">
+      <ellipse cx="200" cy="141" rx="188" ry="6" fill="#000" opacity=".25"/>
+      <path fill="currentColor" d="M16 114 L22 90 Q28 78 56 74 L108 70 Q122 38 158 34 L292 34 Q324 36 340 66 L372 72 Q390 78 392 100 L392 114 Z"/>
+      <path fill="#FFFFFF" opacity=".6" d="M126 68 Q140 46 160 42 L198 42 L198 68 Z"/>
+      <path fill="#FFFFFF" opacity=".6" d="M208 42 L290 42 Q312 44 326 66 L208 68 Z"/>
+      <rect x="368" y="86" width="22" height="8" rx="3" fill="#FFE9A8"/>
+      <rect x="16" y="86" width="14" height="9" rx="3" fill="#FF4A4A"/>
+      <circle cx="96" cy="116" r="28" fill="#14181C"/><circle cx="96" cy="116" r="15" fill="#C9CFD6"/><circle cx="96" cy="116" r="5" fill="#14181C"/>
+      <circle cx="312" cy="116" r="28" fill="#14181C"/><circle cx="312" cy="116" r="15" fill="#C9CFD6"/><circle cx="312" cy="116" r="5" fill="#14181C"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="top" id="home">
+  <div class="wrap">
+    <div class="logo">RIDE TIME Automobiles</div>
+    <div class="info">
+      <svg class="i ic" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <div class="addr">Block 9 Gulistan-e-Johar, Karachi, Pakistan<br><a href="https://www.google.com/maps/search/?api=1&amp;query=RIDE%20TIME%20Automobiles&amp;query_place_id=ChIJDWhuwXM5sz4RaLHsvVC_B2k"><small>View on map</small></a></div>
+    </div>
+    <div class="info">
+      <svg class="i ic" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+      <div><small>Phone</small><a href="tel:+923333474909"><strong>0333 3474909</strong></a></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a href="#home">Home</a>
+    <a href="#inventory">Inventory</a>
+    <a href="#buysell">Buy or sell</a>
+    <a href="#why">Why us</a>
+    <a href="#contact">Contact us</a>
+  </div>
+</nav>
+
+<section class="hero" aria-label="Welcome">
+  <img class="bg" src="https://images.pexels.com/photos/29707848/pexels-photo-29707848/free-photo-of-sleek-white-car-on-scenic-desert-road.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" onerror="this.remove()">
+  <div class="wrap">
+    <div class="copy">
+      <p class="eyebrow">Car dealer in Block 9 Gulistan-e-Johar</p>
+      <h1>Find your next car <span>RIDE TIME Automobiles</span></h1>
+      <p class="lead">Come and see the cars, or call and ask. We are happy to help you buy or sell.</p>
+      <div class="btns">
+        <a class="btn orange" href="tel:+923333474909">Call now</a>
+        <a class="btn ghost" href="https://wa.me/923333474909?text=Assalam%20o%20Alaikum%2C%20I%20saw%20your%20showroom%20online.">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="ratingbar"><div class="wrap"><b>4.6</b><span>Google rating from 17 reviews</span></div></div>
+
+<section id="inventory" aria-label="Cars for sale">
+  <div class="inv-head">
+    <div class="wrap">
+      <h2>Cars for sale <span>at RIDE TIME Automobiles</span></h2>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" aria-selected="true" data-tab="new">New cars</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="used">Used cars</button>
+      </div>
+    </div>
+  </div>
+  <div class="inv">
+    <div class="wrap">
+      <div class="grid">
+        <article class="car" data-type="new"><div class="pic" style="background:linear-gradient(180deg,#DDE3EA,#AEB9C6)"><svg viewBox="0 0 400 150" style="color:#8F98A3"><use href="#sedan"/></svg><img class="photo" src="https://images.pexels.com/photos/29734676/pexels-photo-29734676.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy" onerror="this.remove()"><div class="ribbon"><span>SAMPLE</span></div></div><div class="row"><h3>Suzuki Alto 2024</h3><div class="price">Rs. 29 lac</div></div><div class="specs"><span>Manual</span><span>0 km</span><span>Petrol</span></div></article>
+        <article class="car" data-type="new"><div class="pic" style="background:linear-gradient(180deg,#DDE3EA,#AEB9C6)"><svg viewBox="0 0 400 150" style="color:#1F4E9C"><use href="#sedan"/></svg><img class="photo" src="https://images.pexels.com/photos/29734680/pexels-photo-29734680.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy" onerror="this.remove()"><div class="ribbon"><span>SAMPLE</span></div></div><div class="row"><h3>Honda City 2024</h3><div class="price">Rs. 52 lac</div></div><div class="specs"><span>Automatic</span><span>0 km</span><span>Petrol</span></div></article>
+        <article class="car" data-type="new"><div class="pic" style="background:linear-gradient(180deg,#DDE3EA,#AEB9C6)"><svg viewBox="0 0 400 150" style="color:#2B3138"><use href="#suv"/></svg><img class="photo" src="https://images.pexels.com/photos/29707847/pexels-photo-29707847/free-photo-of-sleek-white-sports-car-on-desert-road.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy" onerror="this.remove()"><div class="ribbon"><span>SAMPLE</span></div></div><div class="row"><h3>Kia Sportage 2024</h3><div class="price">Rs. 85 lac</div></div><div class="specs"><span>Automatic</span><span>0 km</span><span>Petrol</span></div></article>
+        <article class="car" data-type="used" hidden><div class="pic" style="background:linear-gradient(180deg,#DDE3EA,#AEB9C6)"><svg viewBox="0 0 400 150" style="color:#C9CED4"><use href="#sedan"/></svg><img class="photo" src="https://images.pexels.com/photos/29734681/pexels-photo-29734681.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy" onerror="this.remove()"><div class="ribbon"><span>SAMPLE</span></div></div><div class="row"><h3>Toyota Corolla 2016</h3><div class="price">Rs. 38 lac</div></div><div class="specs"><span>Automatic</span><span>82,000 km</span><span>Petrol</span></div></article>
+        <article class="car" data-type="used" hidden><div class="pic" style="background:linear-gradient(180deg,#DDE3EA,#AEB9C6)"><svg viewBox="0 0 400 150" style="color:#1F4E9C"><use href="#sedan"/></svg><img class="photo" src="https://images.pexels.com/photos/29734679/pexels-photo-29734679.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy" onerror="this.remove()"><div class="ribbon"><span>SAMPLE</span></div></div><div class="row"><h3>Honda Civic 2018</h3><div class="price">Rs. 55 lac</div></div><div class="specs"><span>Automatic</span><span>54,000 km</span><span>Petrol</span></div></article>
+        <article class="car" data-type="used" hidden><div class="pic" style="background:linear-gradient(180deg,#DDE3EA,#AEB9C6)"><svg viewBox="0 0 400 150" style="color:#B5121B"><use href="#sedan"/></svg><img class="photo" src="https://images.pexels.com/photos/29734677/pexels-photo-29734677.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy" onerror="this.remove()"><div class="ribbon"><span>SAMPLE</span></div></div><div class="row"><h3>Suzuki Cultus 2017</h3><div class="price">Rs. 22 lac</div></div><div class="specs"><span>Manual</span><span>68,000 km</span><span>Petrol</span></div></article>
+      </div>
+      <div class="more"><a class="btn blue" href="https://wa.me/923333474909?text=Assalam%20o%20Alaikum%2C%20please%20share%20your%20available%20cars.">Ask for all cars</a></div>
+      <p class="samplenote">Sample cars and prices to show the layout. Your real cars, photos and prices go here.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bs" id="buysell" aria-label="Buy or sell">
+  <div class="wrap">
+    <div class="box y">
+      <h3>Are you looking for a car?</h3>
+      <p>Tell us your budget and the car you like. We will tell you what is available.</p>
+      <a class="btn dark" href="tel:+923333474909">Call us</a>
+    </div>
+    <div class="box r">
+      <h3>Do you want to sell a car?</h3>
+      <p>Send us the car details and we will get back to you with an offer.</p>
+      <a class="btn dark" href="https://wa.me/923333474909?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20sell%20my%20car.">Message us</a>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why" aria-label="Why choose us">
+  <div class="wrap">
+    <h2>Why choose us</h2>
+    <div class="feat">
+      <div>
+        <svg class="i" viewBox="0 0 24 24"><path d="M3 12l9-9h8v8l-9 9z"/><circle cx="15.5" cy="8.5" r="1.3"/></svg>
+        <span><h3>Cars for every budget</h3><p>From small everyday cars to bigger family cars, ask and we will show you the options.</p></span>
+      </div>
+      <div>
+        <svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg>
+        <span><h3>Popular brands</h3><p>Suzuki, Toyota, Honda, Kia and more, new and used.</p></span>
+      </div>
+      <div>
+        <svg class="i" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>
+        <span><h3>Easy to reach</h3><p>Call or message on WhatsApp anytime and talk to us directly.</p></span>
+      </div>
+      <div>
+        <svg class="i" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
+        <span><h3>Buy and sell in one place</h3><p>Looking to sell your own car? Send us the details.</p></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-label="Contact">
+  <div class="wrap">
+    <h2>Contact us</h2>
+    <div class="cols">
+      <dl>
+        <dt>Address</dt><dd>Block 9 Gulistan-e-Johar, Karachi, Pakistan</dd>
+        <dt>Phone</dt><dd><a href="tel:+923333474909">0333 3474909</a></dd>
+        <dt>Map</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=RIDE%20TIME%20Automobiles&amp;query_place_id=ChIJDWhuwXM5sz4RaLHsvVC_B2k">Open in Google Maps</a></dd>
+      </dl>
+      <div id="wa" data-phone="923333474909" data-name="RIDE TIME Automobiles">
+        <label>Your name<input id="f-name" type="text" autocomplete="name"></label>
+        <label>Message<textarea id="f-msg" placeholder="Which car are you looking for?"></textarea></label>
+        <button class="btn orange" type="button" id="f-send">Send on WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">Demo preview made for RIDE TIME Automobiles. Sample content shown to illustrate the layout.</div></footer>
+
+<nav class="bar" aria-label="Contact">
+  <a class="btn orange" href="tel:+923333474909">Call now</a>
+  <a class="btn blue" href="https://wa.me/923333474909">WhatsApp</a>
+</nav>
+
+<script>
+  (function () {
+    var tabs = document.querySelectorAll('.tab');
+    var cars = document.querySelectorAll('.car');
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        tabs.forEach(function (x) { x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });
+        var type = t.getAttribute('data-tab');
+        cars.forEach(function (c) { c.hidden = c.getAttribute('data-type') !== type; });
+      });
+    });
+    var wa = document.getElementById('wa');
+    document.getElementById('f-send').addEventListener('click', function () {
+      var who = document.getElementById('f-name').value.trim();
+      var msg = document.getElementById('f-msg').value.trim();
+      var text = 'Assalam o Alaikum, ' + (who ? 'my name is ' + who + '. ' : '') + (msg || 'I saw your showroom online.');
+      window.open('https://wa.me/' + wa.getAttribute('data-phone') + '?text=' + encodeURIComponent(text), '_blank');
+    });
+  })();
+</script>
+</body>
+</html>
